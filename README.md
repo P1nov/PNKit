@@ -28,8 +28,8 @@ wefint, 1473781785@qq.com
 
 PNKit is available under the MIT license. See the LICENSE file for more info.
 
-## Use
-# PNCarouselView
+# Use
+## PNCarouselView
 Use like UITableView.
 It has two protocol, you should implement two of those functions in where you used it
 
