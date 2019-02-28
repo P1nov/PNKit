@@ -40,3 +40,10 @@ It has two protocol, you should implement two of those functions in where you us
 
 ### 这是一个轮播图的封装 可以直接使用 用法类似于UITableView
 
+## UIColor (category)
+
+there is a category fot UIColor, I turn the hex number for UIColor, so you can only use 
+```ruby
++ (UIColor *)colorWithRGB:(unsigned int)hex;
+```
+to set color you want!
