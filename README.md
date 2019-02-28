@@ -42,8 +42,9 @@ It has two protocol, you should implement two of those functions in where you us
 
 ## UIColor (category)
 
-there is a category fot UIColor, I turn the hex number for UIColor, so you can only use 
+there is a category for UIColor, I turn the hex number for UIColor, so you can only use 
 ```ruby
 + (UIColor *)colorWithRGB:(unsigned int)hex;
 ```
 to set color you want!
+### 这是一个UIColor的分类， 你可以直接使用RGB形式的数据设置颜色！
