@@ -38,15 +38,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithFrame:(CGRect)frame carouselTime:(CGFloat)time;
 
-//图片是否能点击
+//图片是否能点击 click enable
 @property (nonatomic, assign) BOOL isEnable;
-//轮播滚动间隔时间
+//轮播滚动间隔时间 carousel time
 @property (nonatomic, assign) CGFloat carouselTime;
-//当前图片
+//当前图片 current image
 @property (nonatomic, strong, readonly) UIImage *currentImage;
-//当前第几张
+//当前第几张 current page of scrollView
 @property (nonatomic, assign, readonly) NSInteger currentIndex;
-//pageControl颜色
+//pageControl颜色 color of pageControl
 @property (nonatomic, strong) UIColor *currentImagePageControlColor;//默认为red
 @property (nonatomic, strong) UIColor *normalImagePageControlColor;//默认为lightGray
 
