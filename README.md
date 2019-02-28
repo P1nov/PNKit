@@ -27,3 +27,14 @@ wefint, 1473781785@qq.com
 ## License
 
 PNKit is available under the MIT license. See the LICENSE file for more info.
+
+## Use
+
+Use like UITableView.
+It has two protocol, you should implement two of those functions in where you used it
+
+```ruby
+- (NSInteger)numberOfImageInCarouselView;
+- (UIImage *)carouselViewImageInEachIndex:(NSInteger)index;
+```
+
