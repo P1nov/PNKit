@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'PNKit_Example' do
+  pod 'PNKit', :path => '../'
+
+  target 'PNKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
