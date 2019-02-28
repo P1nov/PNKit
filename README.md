@@ -38,3 +38,5 @@ It has two protocol, you should implement two of those functions in where you us
 - (UIImage *)carouselViewImageInEachIndex:(NSInteger)index;
 ```
 
+### 这是一个轮播图的封装 可以直接使用 用法类似于UITableView
+
