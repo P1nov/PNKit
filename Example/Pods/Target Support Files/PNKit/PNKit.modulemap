@@ -1,0 +1,6 @@
+framework module PNKit {
+  umbrella header "PNKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
