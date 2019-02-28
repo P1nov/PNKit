@@ -22,7 +22,7 @@ pod 'PNKit'
 
 ## Author
 
-wefint, 1473781785@qq.com
+wefint, 1473781785@qq.com. WeChat:Fyair000
 
 ## License
 
