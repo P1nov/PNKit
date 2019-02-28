@@ -48,3 +48,7 @@ there is a category for UIColor, I turn the hex number for UIColor, so you can o
 ```
 to set color you want!
 ### 这是一个UIColor的分类， 你可以直接使用RGB形式的数据设置颜色！
+
+
+### I will update this pod in a long time, thanks for using it and star it please~
+### 我会一直更新这个pod库， 谢谢你们的stars和使用哦～
