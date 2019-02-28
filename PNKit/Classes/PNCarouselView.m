@@ -85,7 +85,7 @@
         imageView.image = image;
         imageView.tag = index;
         imageView.userInteractionEnabled = _isEnable ? : NO;
-        [imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self.scrollView action:@selector(didSelectImageView:)]];
+        [imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didSelectImageView:)]];
 
         [self.scrollView addSubview:imageView];
 
