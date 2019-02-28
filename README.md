@@ -22,8 +22,21 @@ pod 'PNKit'
 
 ## Author
 
-wefint, 1473781785@qq.com
+wefint, 1473781785@qq.com. WeChat:Fyair000
 
 ## License
 
 PNKit is available under the MIT license. See the LICENSE file for more info.
+
+# Use
+## PNCarouselView
+Use like UITableView.
+It has two protocol, you should implement two of those functions in where you used it
+
+```ruby
+- (NSInteger)numberOfImageInCarouselView;
+- (UIImage *)carouselViewImageInEachIndex:(NSInteger)index;
+```
+
+### 这是一个轮播图的封装 可以直接使用 用法类似于UITableView
+
