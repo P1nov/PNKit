@@ -35,7 +35,7 @@ typedef NS_ENUM(NSUInteger,PNArrowDirection){
 
 @property (nonatomic, assign) CGFloat rowHeight;//行高，默认为40.f
 
-@property (nonatomic, assign) NSMutableArray <PNRowAction *> *rowActions;
+@property (nonatomic, strong) NSMutableArray <PNRowAction *> *rowActions;
 
 - (instancetype)initWithOrigin:(CGPoint)origin width:(CGFloat)width direction:(PNArrowDirection)direction;
 
