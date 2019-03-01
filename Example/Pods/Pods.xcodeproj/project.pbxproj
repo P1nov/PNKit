@@ -19,6 +19,10 @@
 		70230D582227D88600BB5071 /* PNCarouselView.h in Headers */ = {isa = PBXBuildFile; fileRef = 70230D512227D83000BB5071 /* PNCarouselView.h */; };
 		70F8E94B2227EA9200477A86 /* UIColor+PNAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F8E9492227EA9200477A86 /* UIColor+PNAdd.h */; };
 		70F8E94C2227EA9200477A86 /* UIColor+PNAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8E94A2227EA9200477A86 /* UIColor+PNAdd.m */; };
+		70F8E9502228BDA300477A86 /* PNPopoverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F8E94E2228BDA300477A86 /* PNPopoverView.h */; };
+		70F8E9512228BDA300477A86 /* PNPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8E94F2228BDA300477A86 /* PNPopoverView.m */; };
+		70F8E9542228BECA00477A86 /* PNRowAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F8E9522228BECA00477A86 /* PNRowAction.h */; };
+		70F8E9552228BECA00477A86 /* PNRowAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F8E9532228BECA00477A86 /* PNRowAction.m */; };
 		81089ECA31925F225BF31B7C0E1A1586 /* Pods-PNKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6950BCA858B55A15699D0133CB276B5A /* Pods-PNKit_Example-dummy.m */; };
 		868D0A555C3FCB7162F1034B33EF6E54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		AE4EB4AF4BC3D38B7EF49D129006517C /* Pods-PNKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B898DEC1621CA82299B4AB6694481C31 /* Pods-PNKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -61,6 +65,10 @@
 		70230D522227D83000BB5071 /* PNCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNCarouselView.m; path = PNKit/Classes/PNCarouselView.m; sourceTree = "<group>"; };
 		70F8E9492227EA9200477A86 /* UIColor+PNAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+PNAdd.h"; sourceTree = "<group>"; };
 		70F8E94A2227EA9200477A86 /* UIColor+PNAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PNAdd.m"; sourceTree = "<group>"; };
+		70F8E94E2228BDA300477A86 /* PNPopoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNPopoverView.h; sourceTree = "<group>"; };
+		70F8E94F2228BDA300477A86 /* PNPopoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNPopoverView.m; sourceTree = "<group>"; };
+		70F8E9522228BECA00477A86 /* PNRowAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNRowAction.h; sourceTree = "<group>"; };
+		70F8E9532228BECA00477A86 /* PNRowAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNRowAction.m; sourceTree = "<group>"; };
 		76CE299FCB1A54C1C270AF3D2FDBC62E /* PNKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PNKit-umbrella.h"; sourceTree = "<group>"; };
 		7AE2030E3DA667DF6F2D3E6094637B03 /* Pods-PNKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PNKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		822F570CDEC05C6F0879489F5F051289 /* Pods-PNKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PNKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -175,6 +183,18 @@
 			path = PNKit/Classes/Categories;
 			sourceTree = "<group>";
 		};
+		70F8E94D2228BD8C00477A86 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				70F8E94E2228BDA300477A86 /* PNPopoverView.h */,
+				70F8E94F2228BDA300477A86 /* PNPopoverView.m */,
+				70F8E9522228BECA00477A86 /* PNRowAction.h */,
+				70F8E9532228BECA00477A86 /* PNRowAction.m */,
+			);
+			name = Component;
+			path = PNKit/Classes/Component;
+			sourceTree = "<group>";
+		};
 		7796329629CE4C0BF3FE1B953FA408EA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +233,7 @@
 		7F77CBCF14F72899F3948F42C018203C /* PNKit */ = {
 			isa = PBXGroup;
 			children = (
+				70F8E94D2228BD8C00477A86 /* Component */,
 				70F8E9482227EA7500477A86 /* Categories */,
 				70230D512227D83000BB5071 /* PNCarouselView.h */,
 				70230D522227D83000BB5071 /* PNCarouselView.m */,
@@ -256,7 +277,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70F8E9542228BECA00477A86 /* PNRowAction.h in Headers */,
 				BB43A6D6632897A8210D2C84EAAF9ACB /* PNKit-umbrella.h in Headers */,
+				70F8E9502228BDA300477A86 /* PNPopoverView.h in Headers */,
 				70F8E94B2227EA9200477A86 /* UIColor+PNAdd.h in Headers */,
 				70230D532227D83000BB5071 /* PNCarouselView.h in Headers */,
 			);
@@ -396,8 +419,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70F8E9552228BECA00477A86 /* PNRowAction.m in Sources */,
 				70230D542227D83000BB5071 /* PNCarouselView.m in Sources */,
 				70F8E94C2227EA9200477A86 /* UIColor+PNAdd.m in Sources */,
+				70F8E9512228BDA300477A86 /* PNPopoverView.m in Sources */,
 				1C162868B1C5ED79E18E80A6AC89EDD3 /* PNKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

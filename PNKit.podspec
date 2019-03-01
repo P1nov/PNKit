@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'PNKit'
-  s.version          = '0.3.0'
-  s.summary          = 'PNKit 0.3.0 Version'
+  s.version          = '0.4.0'
+  s.summary          = 'PNKit 0.4.0 Version'
 
 
   s.description      = <<-DESC
