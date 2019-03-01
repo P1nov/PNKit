@@ -20,6 +20,11 @@ typedef void(^PNRowActionHandler)(PNRowAction *action);
 @property (nonatomic, strong, nullable) UIFont *font;
 @property (nonatomic, strong, nullable) UIColor *color;
 
++ (PNRowActionConfig *)configWithTitle:(nonnull NSString *)title
+                                  icon:(nullable UIImage *)icon
+                                  font:(nullable UIFont *)font
+                                 color:(nullable UIColor *)color;
+
 @end
 
 @interface PNRowAction : NSObject
