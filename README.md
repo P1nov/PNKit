@@ -82,6 +82,31 @@ typedef NS_ENUM(NSUInteger,PNArrowDirection){
 };
 ```
 
+```ruby
+ _popoverView = [[PNPopoverView alloc] initWithOrigin:CGPointMake(200, 300) width:100 direction:PNArrowDirectionUpRight];
+
+    PNRowActionConfig *config1 = [PNRowActionConfig configWithTitle:@"title1" icon:nil font:nil color:nil];
+    PNRowAction *action1 = [PNRowAction actionWithConfig:config1 handler:^(PNRowAction * _Nonnull action) {
+
+        NSLog(@"第1个action");
+    }];
+
+
+    PNRowActionConfig *config2 = [PNRowActionConfig configWithTitle:@"title2" icon:nil font:nil color:nil];
+    PNRowAction *action2 = [PNRowAction actionWithConfig:config2 handler:^(PNRowAction * _Nonnull action) {
+
+        NSLog(@"第2个action");
+    }];
+
+
+    PNRowActionConfig *config3 = [PNRowActionConfig configWithTitle:@"title3" icon:nil font:nil color:nil];
+    PNRowAction *action3 = [PNRowAction actionWithConfig:config3 handler:^(PNRowAction * _Nonnull action) {
+
+        NSLog(@"第3个action");
+    }];
+    _popoverView.rowActions = [NSMutableArray arrayWithArray:@[action1, action2, action3]];
+```
+
 ### 这是一个弹窗视图，你可以自定义箭头方向哦～
 
 
