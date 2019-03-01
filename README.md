@@ -60,7 +60,29 @@ It has two object you must use : PNRowAction and PNRowActionConfig, you should a
                         handler:(PNRowActionHandler)handler;
 ```
 
-### 这是一个弹窗视图
+
+The most useful thing is that you can set the arrow's direction
+
+```ruby
+typedef NS_ENUM(NSUInteger,PNArrowDirection){
+    //箭头位置
+    PNArrowDirectionLeftUp=1,//左上
+    PNArrowDirectionLeftMiddle,//左中
+    PNArrowDirectionLeftDown,//左下
+    PNArrowDirectionRightUp,//右上
+    PNArrowDirectionRightMiddle,//右中
+    PNArrowDirectionRightDown,//右下
+    PNArrowDirectionUpLeft,//上左
+    PNArrowDirectionUpMiddle,//上中
+    PNArrowDirectionUpRight,//上右
+    PNArrowDirectionDownLeft,//下左
+    PNArrowDirectionDownMiddle,//下中
+    PNArrowDirectionDownRight,//下右
+
+};
+```
+
+### 这是一个弹窗视图，你可以自定义箭头方向哦～
 
 
 ### I will update this pod in a long time, thanks for using it and star it please~
