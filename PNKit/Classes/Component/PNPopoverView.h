@@ -37,11 +37,20 @@ typedef NS_ENUM(NSUInteger,PNArrowDirection){
 
 @property (nonatomic, strong) NSMutableArray <PNRowAction *> *rowActions;
 
+/**
+ 初始化箭头方向和origin和视图列表的宽度
+ init the arrow's direction and origin and width of view
+
+ @param origin <#origin description#>
+ @param width <#width description#>
+ @param direction <#direction description#>
+ @return <#return value description#>
+ */
 - (instancetype)initWithOrigin:(CGPoint)origin width:(CGFloat)width direction:(PNArrowDirection)direction;
 
-- (void)popView;
+- (void)popView;//弹出视图
 
-- (void)dismiss;
+- (void)dismiss;//视图消失
 
 @end
 

@@ -38,11 +38,6 @@
     return self;
 }
 
-- (void)willMoveToSuperview:(UIView *)newSuperview{
-
-    [self pn_updatePopoverView];
-}
-
 - (void)drawRect:(CGRect)rect{
 
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -204,6 +199,8 @@
 }
 
 - (void)popView{
+
+    [self pn_updatePopoverView];
 
     NSArray *subviews = [self.backView subviews];
     for (UIView *view in subviews) {
