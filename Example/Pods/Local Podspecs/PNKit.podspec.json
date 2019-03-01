@@ -1,19 +1,19 @@
 {
   "name": "PNKit",
-  "version": "0.1.0",
-  "summary": "A short description of PNKit.",
+  "version": "0.6.0",
+  "summary": "PNKit 0.6.0 Version",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/wefint/PNKit",
+  "homepage": "https://github.com/P1nov/PNKit",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "wefint": "1473781785@qq.com"
+    "P1nov": "1473781785@qq.com"
   },
   "source": {
-    "git": "https://github.com/wefint/PNKit.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/P1nov/PNKit.git",
+    "tag": "0.6.0"
   },
   "platforms": {
     "ios": "8.0"

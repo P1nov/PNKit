@@ -39,6 +39,10 @@ typedef NS_ENUM(NSUInteger,PNArrowDirection){
 
 - (instancetype)initWithOrigin:(CGPoint)origin width:(CGFloat)width direction:(PNArrowDirection)direction;
 
+- (void)popView;
+
+- (void)dismiss;
+
 @end
 
 NS_ASSUME_NONNULL_END

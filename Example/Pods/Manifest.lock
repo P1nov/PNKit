@@ -1,5 +1,5 @@
 PODS:
-  - PNKit (0.1.0)
+  - PNKit (0.6.0)
 
 DEPENDENCIES:
   - PNKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PNKit: 6ec48d5316722b2d6574caa5b9295e32434a9f9c
+  PNKit: f17b3a0b18b06bb2e8c0d5a3d7cac3519698b05f
 
 PODFILE CHECKSUM: cae76b4b7cc57fa980412201a7b1fe8914866a81
 

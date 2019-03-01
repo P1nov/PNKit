@@ -10,6 +10,10 @@
 #endif
 #endif
 
+#import "UIColor+PNAdd.h"
+#import "PNPopoverView.h"
+#import "PNRowAction.h"
+#import "PNCarouselView.h"
 
 FOUNDATION_EXPORT double PNKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char PNKitVersionString[];

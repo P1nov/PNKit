@@ -47,7 +47,18 @@
 
     CGContextRef context = UIGraphicsGetCurrentContext();
 
-    if(_direction == PNArrowDirectionLeftUp || _direction == PNArrowDirectionLeftMiddle || _direction == PNArrowDirectionLeftDown){
+    if (_direction == PNArrowDirectionLeftUp) {
+
+
+        CGFloat startX = self.origin.x;
+        CGFloat startY = self.origin.y;
+        CGContextMoveToPoint(context, startX, startY);//设置起点
+        CGContextAddLineToPoint(context, startX+5, startY-5);
+        CGContextAddLineToPoint(context, startX+5, startY+5);
+    }
+    else if (_direction == PNArrowDirectionLeftMiddle)
+    {
+
 
         CGFloat startX = self.origin.x;
         CGFloat startY = self.origin.y;
@@ -56,33 +67,96 @@
         CGContextAddLineToPoint(context, startX+5, startY+5);
 
     }
+    else if (_direction == PNArrowDirectionLeftDown)
+    {
 
-    if(_direction == PNArrowDirectionUpLeft || _direction == PNArrowDirectionUpMiddle || _direction == PNArrowDirectionUpRight){
-
-        CGFloat startX = self.origin.x;
-        CGFloat startY = self.origin.y;
-        CGContextMoveToPoint(context, startX, startY);//设置起点
-        CGContextAddLineToPoint(context, startX-5, startY+5);
-        CGContextAddLineToPoint(context, startX+5, startY+5);
-    }
-
-    if(_direction == PNArrowDirectionRightUp || _direction == PNArrowDirectionRightMiddle || _direction == PNArrowDirectionRightDown){
 
         CGFloat startX = self.origin.x;
         CGFloat startY = self.origin.y;
         CGContextMoveToPoint(context, startX, startY);//设置起点
-        CGContextAddLineToPoint(context, startX-5, startY-5);
-        CGContextAddLineToPoint(context, startX-5, startY+5);
-
-    }
-
-    if(_direction == PNArrowDirectionDownLeft || _direction == PNArrowDirectionDownMiddle || _direction == PNArrowDirectionDownRight){
-
-        CGFloat startX = self.origin.x;
-        CGFloat startY = self.origin.y;
-        CGContextMoveToPoint(context, startX, startY);//设置起点
-        CGContextAddLineToPoint(context, startX-5, startY-5);
         CGContextAddLineToPoint(context, startX+5, startY-5);
+        CGContextAddLineToPoint(context, startX+5, startY+5);
+
+    }
+    else if (_direction == PNArrowDirectionRightUp)
+    {
+        CGFloat startX = self.origin.x;
+        CGFloat startY = self.origin.y;
+        CGContextMoveToPoint(context, startX, startY);//设置起点
+        CGContextAddLineToPoint(context, startX-5, startY-5);
+        CGContextAddLineToPoint(context, startX-5, startY+5);
+
+    }
+    else if (_direction == PNArrowDirectionRightMiddle)
+    {
+        CGFloat startX = self.origin.x;
+        CGFloat startY = self.origin.y;
+        CGContextMoveToPoint(context, startX, startY);//设置起点
+        CGContextAddLineToPoint(context, startX-5, startY-5);
+        CGContextAddLineToPoint(context, startX-5, startY+5);
+
+    }
+    else if (_direction == PNArrowDirectionRightDown)
+    {
+        CGFloat startX = self.origin.x;
+        CGFloat startY = self.origin.y;
+        CGContextMoveToPoint(context, startX, startY);//设置起点
+        CGContextAddLineToPoint(context, startX-5, startY-5);
+        CGContextAddLineToPoint(context, startX-5, startY+5);
+
+    }
+    else if (_direction == PNArrowDirectionUpLeft)
+    {
+        CGFloat startX = self.origin.x;
+        CGFloat startY = self.origin.y;
+        CGContextMoveToPoint(context, startX, startY);//设置起点
+        CGContextAddLineToPoint(context, startX + 5, startY +5);
+        CGContextAddLineToPoint(context, startX -5, startY+5);
+
+    }
+    else if (_direction == PNArrowDirectionUpMiddle)
+    {
+        CGFloat startX = self.origin.x;
+        CGFloat startY = self.origin.y;
+        CGContextMoveToPoint(context, startX, startY);//设置起点
+        CGContextAddLineToPoint(context, startX + 5, startY +5);
+        CGContextAddLineToPoint(context, startX -5, startY+5);
+    }
+    else if (_direction == PNArrowDirectionUpRight)
+    {
+        CGFloat startX = self.origin.x;
+        CGFloat startY = self.origin.y;
+        CGContextMoveToPoint(context, startX, startY);//设置起点
+        CGContextAddLineToPoint(context, startX + 5, startY +5);
+        CGContextAddLineToPoint(context, startX -5, startY+5);
+
+    }
+    else if (_direction == PNArrowDirectionDownLeft)
+    {
+        CGFloat startX = self.origin.x;
+        CGFloat startY = self.origin.y;
+        CGContextMoveToPoint(context, startX, startY);//设置起点
+        CGContextAddLineToPoint(context, startX - 5, startY -5);
+        CGContextAddLineToPoint(context, startX +5, startY-5);
+
+    }
+    else if (_direction == PNArrowDirectionDownMiddle)
+    {
+        CGFloat startX = self.origin.x;
+        CGFloat startY = self.origin.y;
+        CGContextMoveToPoint(context, startX, startY);//设置起点
+        CGContextAddLineToPoint(context, startX - 5, startY -5);
+        CGContextAddLineToPoint(context, startX +5, startY-5);
+
+    }
+    else if (_direction == PNArrowDirectionDownMiddle)
+    {
+        CGFloat startX = self.origin.x;
+        CGFloat startY = self.origin.y;
+        CGContextMoveToPoint(context, startX, startY);//设置起点
+        CGContextAddLineToPoint(context, startX - 5, startY -5);
+        CGContextAddLineToPoint(context, startX +5, startY-5);
+
     }
 
     CGContextClosePath(context);
