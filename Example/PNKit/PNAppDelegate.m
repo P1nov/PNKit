@@ -7,6 +7,7 @@
 //
 
 #import "PNAppDelegate.h"
+#import "PNViewController.h"
 
 @implementation PNAppDelegate
 
